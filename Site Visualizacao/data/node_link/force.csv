@@ -1,0 +1,24 @@
+source,target,value
+FT,Client_1,20
+Client_1,Projeto_1,1.5
+Client_1,Projeto_2,1.5
+Client_1,Projeto_3,1.5
+Client_1,Projeto_4,1.5
+Projeto_1,1.18.0,1.3
+Projeto_1,1.19.0/2.0.0,1.3
+Projeto_1,2.1.0,1.3
+Projeto_1,2.2.0,1.3
+Projeto_1,2.3.0,1.3
+Projeto_2,2.1.0 ,1.3
+Projeto_2,2.1.1/2.1.2,1.3
+Projeto_2,2.2.0 ,1.3
+Projeto_2,2.3.0 ,1.3
+Projeto_2,2.4.0,1.3
+Projeto_2,3.0.0,1.3
+Projeto_2,3.0.1,1.3
+Projeto_3,1,1.3
+Projeto_4,1.15.0,1.3
+Projeto_4,1.16.0,1.3
+Projeto_4,1.17.0,1.3
+Projeto_4,1.18.0 ,1.3
+Projeto_4,1.19.0,1.3

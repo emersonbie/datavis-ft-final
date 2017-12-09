@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link rel="stylesheet" href="css/dc.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles-nodes.css">
+    <link rel="stylesheet" href="css/d3.parcoords.css">
+    <script src="js/crossfilter.js" charset="utf-8"></script>
+    <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script src="js/d3.v3.js"></script>
+    <script src="lib/d3.js"></script>
+    <script src="lib/d3.svg.multibrush.js"></script>
+    <script src="js/d3.parcoords.js"></script>
+    <script src="js/dc.js" charset="utf-8"></script>
+
+    <title>Trabalho Final de Visualização</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.min.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+    <!-- Navigation -->
+    <a class="menu-toggle rounded" href="#">
+      <i class="fa fa-bars"></i>
+    </a>
+    <nav id="sidebar-wrapper">
+      <ul class="sidebar-nav">
+        <li class="sidebar-brand">
+          <a class="js-scroll-trigger" href="#page-top">Trabalho de Visualização</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#page-top">Início</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#geral">Visão Geral</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#clientes">Clientes</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#projetos">Projetos</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#contact">Equipe</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Header -->
+    <header class="masthead d-flex">
+      <div class="container text-center my-auto">
+        <h1 class="mb-1">Trabalho de Visualização</h1>
+        <h3 class="mb-5">
+          <em>Uma visualização da produtividade de uma equipe na Fábrica de testes do GREat</em>
+        </h3>
+        <a class="btn btn-primary btn-xl js-scroll-trigger" href="#geral">Visão Geral</a>
+      </div>
+      <div class="overlay"></div>
+    </header>
+
+    <!-- Visão Geral -->
+    <section class="content-section bg-light" id="geral">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <h2>Visão geral dos projetos da Fábrica de Testes do GREat</h2>
+            <p class="lead mb-5">Colocar os Gráficos da visão Geral (Node, Coodenadas Paralelas, DRE Projetos)</p>
+            <a class="btn btn-dark btn-xl js-scroll-trigger" href="#clientes">Clientes e Projetos</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Clientes -->
+    <section class="content-section bg-primary text-white text-center" id="clientes">
+      <div class="container">
+        <div class="content-section-heading">
+          <h3 class="text-secondary mb-0"></h3>
+          <h2 class="mb-5">Clientes</h2>
+        </div>
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <span class="service-icon rounded-circle mx-auto mb-3">
+              <i class="icon-pencil"></i>
+            </span>
+            <h4>
+              <strong>Cliente 1</strong>
+            </h4>
+            <p class="text-faded mb-0">Sistemas WEB</p>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <span class="service-icon rounded-circle mx-auto mb-3">
+              <i class="icon-mustache"></i>
+            </span>
+            <h4>
+              <strong>Cliente 2</strong>
+            </h4>
+            <p class="text-faded mb-0">Aplicativos Android</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br> </br>
+
+    <!-- Projetos Cliente 1 -->
+    <section class="content-section bg-primary text-white text-center" id="projetos">
+      <div class="container">
+        <div class="content-section-heading">
+          <h3 class="text-secondary mb-0">Projetos do Cliente 1</h3>
+          <h2 class="mb-5">Projetos</h2>
+        </div>
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <span class="service-icon rounded-circle mx-auto mb-3">
+              <i class="icon-pencil"></i>
+            </span>
+            <a class="btn btn-primary btn-xl" href="#projeto1">Projeto 1</a>
+
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <span class="service-icon rounded-circle mx-auto mb-3">
+              <i class="icon-mustache"></i>
+            </span>
+            <h4>
+              <strong>Projeto 2</strong>
+            </h4>
+            <p class="text-faded mb-0">>Descrição projeto 2</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br> </br>
+    <!-- Projetos Cliente 2 -->
+    <section class="content-section bg-primary text-white text-center" id="projetos2">
+      <div class="container">
+        <div class="content-section-heading">
+          <h3 class="text-secondary mb-0">Projetos do Cliente 2</h3>
+          <h2 class="mb-5">Projetos</h2>
+        </div>
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <span class="service-icon rounded-circle mx-auto mb-3">
+              <i class="icon-pencil"></i>
+            </span>
+            <h4>
+              <strong>Cliente 1</strong>
+            </h4>
+            <p class="text-faded mb-0">Sistemas WEB</p>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <span class="service-icon rounded-circle mx-auto mb-3">
+              <i class="icon-mustache"></i>
+            </span>
+            <h4>
+              <strong>Cliente 2</strong>
+            </h4>
+            <p class="text-faded mb-0">Aplicativos Android</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Visão Geral -->
+    <section class="content-section bg-light" id="projeto1">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <h2>Informações Projeto 1</h2>
+          </div>
+
+          <div><h1>Quantidade de Releases pro projeto</h1>
+             <div id="chartReleases_Projeto"></div>
+          </div>
+
+          <div><h1>Total de bugs por projeto</h1>
+             <div id="chartBugs_Projeto"></div>
+          </div>
+          
+          <div><h1>Quantidade de casos de teste X Quantidade de bugs por release</h1>
+             <div id="chartTC_Bug_Release"></div>
+          </div>
+          <div><h1>Quantidade de casos de teste por release</h1>
+             <div id="chartTC_Release"></div>
+          </div>
+
+          <div><h1>Eficiência​ ​ da​ ​ remoção​ ​ de​ ​ defeitos​ ​ nos​ ​ projetos ​ testados</h1>
+             <div id="chartDRE_Project"></div>
+          </div>
+
+          <div><h1>Eficiência​ ​ da​ ​ remoção​ ​ de​ ​ defeitos​ ​ nas​ ​ releases​ ​ testadas</h1>
+             <div id="chartDRE_Release"></div>
+          </div>
+
+          <div><h1>Horas Estimadas X Horas Reais</h1>
+             <div id="chartHoras_Release"></div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Callout -->
+    <section class="callout">
+      <div class="container text-center">
+        <h2 class="mx-auto mb-5">Welcome to
+          <em>your</em>
+          next website!</h2>
+        <a class="btn btn-primary btn-xl" href="https://startbootstrap.com/template-overviews/stylish-portfolio/">Download Now!</a>
+      </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section class="content-section" id="portfolio">
+      <div class="container">
+        <div class="content-section-heading text-center">
+          <h3 class="text-secondary mb-0">Portfolio</h3>
+          <h2 class="mb-5">Recent Projects</h2>
+        </div>
+        <div class="row no-gutters">
+          <div class="col-lg-6">
+            <a class="portfolio-item" href="#">
+              <span class="caption">
+                <span class="caption-content">
+                  <h2>Stationary</h2>
+                  <p class="mb-0">A yellow pencil with envelopes on a clean, blue backdrop!</p>
+                </span>
+              </span>
+              <img class="img-fluid" src="img/portfolio-1.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-lg-6">
+            <a class="portfolio-item" href="#">
+              <span class="caption">
+                <span class="caption-content">
+                  <h2>Ice Cream</h2>
+                  <p class="mb-0">A dark blue background with a colored pencil, a clip, and a tiny ice cream cone!</p>
+                </span>
+              </span>
+              <img class="img-fluid" src="img/portfolio-2.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-lg-6">
+            <a class="portfolio-item" href="#">
+              <span class="caption">
+                <span class="caption-content">
+                  <h2>Strawberries</h2>
+                  <p class="mb-0">Strawberries are such a tasty snack, especially with a little sugar on top!</p>
+                </span>
+              </span>
+              <img class="img-fluid" src="img/portfolio-3.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-lg-6">
+            <a class="portfolio-item" href="#">
+              <span class="caption">
+                <span class="caption-content">
+                  <h2>Workspace</h2>
+                  <p class="mb-0">A yellow workspace with some scissors, pencils, and other objects.</p>
+                </span>
+              </span>
+              <img class="img-fluid" src="img/portfolio-4.jpg" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="content-section bg-primary text-white">
+      <div class="container text-center">
+        <h2 class="mb-4">The buttons below are impossible to resist...</h2>
+        <a href="#" class="btn btn-xl btn-light mr-4">Click Me!</a>
+        <a href="#" class="btn btn-xl btn-dark">Look at Me!</a>
+      </div>
+    </section>
+
+    <!-- Map -->
+    <section id="contact" class="map">
+      <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
+      <br/>
+      <small>
+        <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
+      </small>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+      <div class="container">
+        <ul class="list-inline mb-5">
+          <li class="list-inline-item">
+            <a class="social-link rounded-circle text-white mr-3" href="#">
+              <i class="icon-social-facebook"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="social-link rounded-circle text-white mr-3" href="#">
+              <i class="icon-social-twitter"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="social-link rounded-circle text-white" href="#">
+              <i class="icon-social-github"></i>
+            </a>
+          </li>
+        </ul>
+        <p class="text-muted small mb-0">Copyright &copy; Your Website 2017</p>
+      </div>
+    </footer>
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+      <i class="fa fa-angle-up"></i>
+    </a>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/stylish-portfolio.min.js"></script>
+
+    <!-- Gráficos -->
+    <script src="js/graph.js"></script>
+
+  </body>
+
+</html>
