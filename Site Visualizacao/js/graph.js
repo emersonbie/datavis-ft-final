@@ -22,7 +22,7 @@
       var totalBugs = d3.map();
       var releaseByProject = d3.map();
 
-      d3.json("data/Data_Analysis.json", function(error, data) {
+      d3.json("Data_Analysis.json", function(error, data) {
 
         var dtgFormat = d3.time.format("%d/%m/%Y");
 
