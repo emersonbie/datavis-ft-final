@@ -10,14 +10,8 @@
 
     <link rel="stylesheet" href="css/dc.css">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/styles-nodes.css">
-    <link rel="stylesheet" href="css/d3.parcoords.css">
     <script src="js/crossfilter.js" charset="utf-8"></script>
     <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
-    <script src="js/d3.v3.js"></script>
-    <script src="lib/d3.js"></script>
-    <script src="lib/d3.svg.multibrush.js"></script>
-    <script src="js/d3.parcoords.js"></script>
     <script src="js/dc.js" charset="utf-8"></script>
 
     <title>Trabalho Final de Visualização</title>
@@ -66,10 +60,15 @@
     <!-- Header -->
     <header class="masthead d-flex">
       <div class="container text-center my-auto">
-        <h1 class="mb-1">Trabalho de Visualização</h1>
-        <h3 class="mb-5">
-          <em>Uma visualização da produtividade de uma equipe na Fábrica de testes do GREat</em>
+       
+       <div class="teste" style="background-color: #000; opacity: 0.5">
+        <h1 class="mb-1" style="color: white;">PROFIT</h1>
+        <h3 class="mb-5" style="font-weight:300; color: white;  ">
+          <em>Visualização para Análise da Produtividade da Fábrica de Testes do GREat  </em>
         </h3>
+        
+        </div>
+
         <a class="btn btn-primary btn-xl js-scroll-trigger" href="#geral">Visão Geral</a>
       </div>
       <div class="overlay"></div>
@@ -80,16 +79,123 @@
       <div class="container text-center">
         <div class="row">
           <div class="col-lg-10 mx-auto">
-            <h2>Visão geral dos projetos da Fábrica de Testes do GREat</h2>
-            <p class="lead mb-5">Colocar os Gráficos da visão Geral (Node, Coodenadas Paralelas, DRE Projetos)</p>
-            <a class="btn btn-dark btn-xl js-scroll-trigger" href="#clientes">Clientes e Projetos</a>
+            <h2>O PROFIT</h2>
+
+            <p class="lead mb-5" style="text-align:justify; text-justify: inter-word;">
+              Fábrica de Testes (FT) é uma estrutura independente  que fornece serviços de teste de software para empresas desenvolvedoras de software. Ao demandar os serviços de uma FT, uma empresa pode se beneficiar de testes com alta qualidade e baixo custo, uma vez que não precisaria manter sua própria equipe de testes. Por atender vários clientes, uma FT deve organizar bem suas atividades, sendo comum o uso de sistemas de gerenciamento, como o JIRA, para acompanhamento dos processos. Essa ferramenta gera grande volume de dados que podem ser usados para análise da produtividade, porém dados brutos raramente são suficientes para tal. 
+            </p>
+            <p class="lead mb-5" style="text-align:justify; text-justify: inter-word;">
+              Assim, propomos o PROFIT, um produto que fornece visualizações geradas a partir dos dados do JIRA da FT do GREat, visando possibilitar uma melhor análise da produtividade por meio de gráficos objetivos e adequados às necessidades do seu público-alvo, composto por  gerentes, colaboradores e clientes da Fábrica.
+            </p>  
+            <a class="btn btn-dark btn-xl js-scroll-trigger" href="#portfolio">Clientes e Projetos</a>
           </div>
         </div>
       </div>
     </section>
 
+
+<!-- A fábrica de testes -->
+    <section class="content-section bg-teste" id="fabrica" style="background-color: indigo">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <h2 style="color: #fff">A Fábrica de Testes do GREat </h2>
+
+            <p class="lead mb-5" style="text-align:justify; text-justify: inter-word; color: #fff" >
+              Em 2010, foi criada no GREat a Célula de Pesquisa em Testes e Qualidade de Software (CTQs) que buscava desenvolver novas soluções para inovação, além de oferecer serviços de consultoria em teste de software para projetos de PDI do grupo. Buscando melhorar seus serviços, em 2016, a CTQs passou a seguir a estrutura de uma fábrica de testes (FT), contando com profissionais certificados na área de testes e consultores nas áreas de Teste e Qualidade de Software. Assim, a FT passou a oferecer serviços com mais qualidade e alinhados às novidades em pesquisa e inovação.
+              <br><br>
+              Atualmente, a Fábrica de Testes possui uma equipe multidisciplinar composta de 14 membros, entre PhDs com experiência em teste de software, testadores profissionais certificados (ISTQB - CTFL), especialistas em usabilidade e em qualidade de software, além de estudantes de pós-graduação e graduação da UFC.
+            </p>  
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+     <!-- Visão Geral da Produtividade da Fábrica -->
+    <section class="content-section bg-light" id="geral">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <h2>Visão Geral da Produtividade da Fábrica</h2>
+
+            <p class="lead mb-5" style="text-align:justify; text-justify: inter-word;" >
+              As visualizações a seguir dão uma visão geral da produtividade da Fábrica de Testes do GREat. O <b>Gráfico 1</b> mostra a distribuição da equipe nos projetos e suas releases, a fim de identificar riscos na alocação de pessoal e minimizar os impactos de possíveis ausências dos colaboradores, por exemplo, por férias ou doença.
+              O <b>Gráfico 2</b> auxilia na comparação entre clientes e projetos, a fim de identificar anomalias ou desvios de processos nas atividades da Fábrica.
+            </p>  
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+<!-- Portfolio -->
+    <section class="content-section" id="portfolio">
+      <div class="container">
+        <div class="content-section-heading text-center">
+          <h3 class="text-secondary mb-0">Portfolio</h3>
+          <h2 class="mb-5">Recent Projects</h2>
+        </div>
+        <div class="row no-gutters">
+          <div class="col-lg-6">
+            <a class="portfolio-item" href="#">
+              <span class="caption">
+                <span class="caption-content">
+                  <h2>Cliente 1 </h2>
+                  <p class="mb-0">Projetos relacionados a sistemas web</p>
+                </span>
+              </span>
+              <img class="img-fluid" src="img/bClient01.png" alt="">
+            </a>
+          </div>
+          <div class="col-lg-6">
+            <a class="portfolio-item" href="#">
+              <span class="caption">
+                <span class="caption-content">
+                  <h2>Cliente 2 </h2>
+                  <p class="mb-0">Projetos relacionados a aplicações Android</p>
+                </span>
+              </span>
+              <img class="img-fluid" src="img/bClient02.png" alt="">
+            </a>
+          </div>
+          <!--<div class="col-lg-6">
+            <a class="portfolio-item" href="#">
+              <span class="caption">
+                <span class="caption-content">
+                  <h2>Strawberries</h2>
+                  <p class="mb-0">Strawberries are such a tasty snack, especially with a little sugar on top!</p>
+                </span>
+              </span>
+              <img class="img-fluid" src="img/portfolio-3.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-lg-6">
+            <a class="portfolio-item" href="#">
+              <span class="caption">
+                <span class="caption-content">
+                  <h2>Workspace</h2>
+                  <p class="mb-0">A yellow workspace with some scissors, pencils, and other objects.</p>
+                </span>
+              </span>
+              <img class="img-fluid" src="img/portfolio-4.jpg" alt="">
+            </a>
+          </div>-->
+        </div>
+      </div>
+    </section>
+
+
+
+
+
     <!-- Clientes -->
-    <section class="content-section bg-primary text-white text-center" id="clientes">
+    <!--<section class="content-section bg-primary text-white text-center" id="clientes">
       <div class="container">
         <div class="content-section-heading">
           <h3 class="text-secondary mb-0"></h3>
@@ -118,10 +224,10 @@
         </div>
       </div>
     </section>
-    <br> </br>
+    <br> </br> -->
 
     <!-- Projetos Cliente 1 -->
-    <section class="content-section bg-primary text-white text-center" id="projetos">
+   <!-- <section class="content-section bg-primary text-white text-center" id="projetos">
       <div class="container">
         <div class="content-section-heading">
           <h3 class="text-secondary mb-0">Projetos do Cliente 1</h3>
@@ -148,9 +254,11 @@
         </div>
       </div>
     </section>
-    <br> </br>
+    <br> </br> -->
+
+
     <!-- Projetos Cliente 2 -->
-    <section class="content-section bg-primary text-white text-center" id="projetos2">
+    <!--<section class="content-section bg-primary text-white text-center" id="projetos2">
       <div class="container">
         <div class="content-section-heading">
           <h3 class="text-secondary mb-0">Projetos do Cliente 2</h3>
@@ -178,7 +286,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- Visão Geral -->
     <section class="content-section bg-light" id="projeto1">
@@ -221,17 +329,19 @@
 
 
     <!-- Callout -->
-    <section class="callout">
+   <!-- <section class="callout">
       <div class="container text-center">
         <h2 class="mx-auto mb-5">Welcome to
           <em>your</em>
           next website!</h2>
         <a class="btn btn-primary btn-xl" href="https://startbootstrap.com/template-overviews/stylish-portfolio/">Download Now!</a>
       </div>
-    </section>
+    </section>-->
+
+
 
     <!-- Portfolio -->
-    <section class="content-section" id="portfolio">
+    <!--<section class="content-section" id="portfolio">
       <div class="container">
         <div class="content-section-heading text-center">
           <h3 class="text-secondary mb-0">Portfolio</h3>
@@ -242,8 +352,8 @@
             <a class="portfolio-item" href="#">
               <span class="caption">
                 <span class="caption-content">
-                  <h2>Stationary</h2>
-                  <p class="mb-0">A yellow pencil with envelopes on a clean, blue backdrop!</p>
+                  <h2>Cliente 1 </h2>
+                  <p class="mb-0">Projetos relacionados a sistemas web</p>
                 </span>
               </span>
               <img class="img-fluid" src="img/portfolio-1.jpg" alt="">
@@ -253,14 +363,14 @@
             <a class="portfolio-item" href="#">
               <span class="caption">
                 <span class="caption-content">
-                  <h2>Ice Cream</h2>
-                  <p class="mb-0">A dark blue background with a colored pencil, a clip, and a tiny ice cream cone!</p>
+                  <h2>Cliente 2 </h2>
+                  <p class="mb-0">Projetos relacionados a aplicações Android</p>
                 </span>
               </span>
               <img class="img-fluid" src="img/portfolio-2.jpg" alt="">
             </a>
           </div>
-          <div class="col-lg-6">
+          <!--<div class="col-lg-6">
             <a class="portfolio-item" href="#">
               <span class="caption">
                 <span class="caption-content">
@@ -284,29 +394,33 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
+
+
+
 
     <!-- Call to Action -->
-    <section class="content-section bg-primary text-white">
+    <!--<section class="content-section bg-primary text-white">
       <div class="container text-center">
         <h2 class="mb-4">The buttons below are impossible to resist...</h2>
         <a href="#" class="btn btn-xl btn-light mr-4">Click Me!</a>
         <a href="#" class="btn btn-xl btn-dark">Look at Me!</a>
       </div>
-    </section>
+    </section>-->
 
     <!-- Map -->
-    <section id="contact" class="map">
+    <!--<section id="contact" class="map">
       <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
       <br/>
       <small>
         <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
       </small>
-    </section>
+    </section>-->
 
     <!-- Footer -->
     <footer class="footer text-center">
       <div class="container">
+        <!--
         <ul class="list-inline mb-5">
           <li class="list-inline-item">
             <a class="social-link rounded-circle text-white mr-3" href="#">
@@ -324,7 +438,7 @@
             </a>
           </li>
         </ul>
-        <p class="text-muted small mb-0">Copyright &copy; Your Website 2017</p>
+        <p class="text-muted small mb-0">Copyright &copy; Your Website 2017</p> -->
       </div>
     </footer>
 
