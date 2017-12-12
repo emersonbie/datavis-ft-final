@@ -1,6 +1,6 @@
 var blue_to_brown = d3.scale.linear()
   .domain([9, 50])
-  .range(["steelblue", "brown"])
+  .range(["#4169E1", "red"])
   .interpolate(d3.interpolateLab);
 
 var color = function(d) { return blue_to_brown(d['Qnt_Bugs']); };
@@ -10,7 +10,7 @@ var parcoords = d3.parcoords()("#example")
     .alpha(0.4);
 
 // load csv file and create the chart
-d3.csv('data/parallel_coord/Data_Analysis.csv', function(data) {
+d3.csv('data/Data_Analysis.csv', function(data) {
   parcoords
     .data(data)
     .hideAxis(["name"])
