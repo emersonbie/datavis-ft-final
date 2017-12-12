@@ -93,26 +93,26 @@ function color(d) {
   if(d.name == "Analista_2")
     cor = "#00CED1";
   if(d.name == "Analista_3")
-    cor = "#66CDAA";
+    cor = "#624185";
   if(d.name == "Analista_4")
     cor = "#00829C";
   if(d.name == "Analista_5")
-    cor = "#7FFFD4";
+    cor = "#9A469B";
   if(d.name == "Analista_6")
-    cor = "#77A9F7";
+    cor = "#A27792";
   
   var corProject;
   if(d.level == 1)
-    corProject = "#7A7ACC";
-  if(d.level == 2)
     corProject = "#A02240";
-  if(d.level == 3)
+  if(d.level == 2)
     corProject = "#350C29";
+  if(d.level == 3)
+    corProject = "#EF5350";
   //else
     //corProject = "#c6dbef";
   //else
     //cor = "#c6dbef";
-  return d._children ? "#3182bd" : d.children ? corProject : cor;
+  return d._children ? "#AAAAAA" : d.children ? corProject : cor;
 }
 
 // Toggle children on click.

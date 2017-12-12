@@ -1,35 +1,35 @@
 {
    "name": "FT", 
    "children": [
-      {"name": "Client_1", "size": 25000, "level":1,
+      {"name": "Client_1", "size": 15000, "level":1,
         "children": [
-          {"name": "Projeto_1", "level": 2, "size": 11000,
+          {"name": "Projeto_1", "level": 2,
           "children": [
-            {"name": "1.18.0", "level":3, "size": 10000,
+            {"name": "1.18.0", "level":3,
               "children": [
                 {"name": "Analista_1", "size": 7142},
                 {"name": "Analista_4", "size": 2857}
               ]
             },
-            {"name": "1.19.0/2.0.0", "level":3, "size": 10000,
+            {"name": "1.19.0/2.0.0", "level":3,
               "children": [
                 {"name": "Analista_1", "size": 7142}
               ]
             },
-            {"name": "2.1.0", "level":3, "size": 10000,
+            {"name": "2.1.0", "level":3,
               "children": [
                 {"name": "Analista_1", "size": 7142},
                 {"name": "Analista_4", "size": 2857},
                 {"name": "Analista_5", "size": 1428}
               ]
             },
-            {"name": "2.2.0", "level":3, "size": 10000,
+            {"name": "2.2.0", "level":3,
               "children": [
                 {"name": "Analista_1", "size": 7142},
                 {"name": "Analista_6", "size": 1428}
               ]
             },
-            {"name": "2.3.0", "level":3, "size": 10000,
+            {"name": "2.3.0", "level":3,
               "children": [
                 {"name": "Analista_1", "size": 7142},
                 {"name": "Analista_2", "size": 1428}
@@ -151,7 +151,7 @@
         ]  
       },
 
-      {"name": "Client_2", "size": 20000, "level":1,
+      {"name": "Client_2", "size": 15000, "level":1,
         "children": [
           {"name": "Projeto_5", "level": 2,
           "children": [

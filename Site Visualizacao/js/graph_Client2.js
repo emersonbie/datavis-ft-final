@@ -19,6 +19,9 @@ var dreReleaseChart_Client2 = dc.barChart('#chartDRE_Release_Client2');
 // Gráfico de horas estimadas x reais por release
 var compositeHorasReleaseChart_Client2 = dc.compositeChart('#chartHoras_Release_Client2');
 
+// Gráfico de Casos de teste x Bugs
+var scatterChart_Client2 = dc.scatterPlot('#scatterChart_Client2');
+
 // Gráfico de linha para quantidade de casos de teste x bugs por release
 //var tcBugReleaseChart = dc.compositeChart('#chartTC_Bug_Release');
 
@@ -83,6 +86,12 @@ d3.json("Data_Analysis_Client2.json", function(error, data) {
         return d.Release_Date;
   });
 
+  //Dimensão para o scatter
+  var scatterDim = facts.dimension(function(d){
+        return [d.Qnt_TC_Release, d.Qnt_Bugs];
+  });
+
+
   //Retorna qnt de casos de teste por release
   var tcByReleaseGroup = releaseDim.group().reduceSum(function(d){
     return d.Qnt_TC_Release;
@@ -132,6 +141,12 @@ d3.json("Data_Analysis_Client2.json", function(error, data) {
   var dreByProjectGroup = projectDim.group().reduceSum(function(d){
      return (d.Qnt_Bugs/totalBugs.get(d.Project) * 100);
   });
+
+  //Retorna quantidade de bugs por cliente
+  var bugsClientScatter = scatterDim.group().reduceSum(function(d){
+     return d.Qnt_Bugs_Client;
+  });
+
 
 
   //Retorna qnt de casos de teste por data da release
@@ -198,6 +213,20 @@ d3.json("Data_Analysis_Client2.json", function(error, data) {
          console.log(releaseByProject.get(filter));
          updateRelease(chart,filter);
     });
+
+            //Scatter
+    scatterChart_Client2
+    .width(900).height(300)
+    .margins({top: 10, right: 10, bottom: 50, left: 50})
+    .dimension(releaseDim)
+    .x(d3.scale.linear().domain([0,800]))
+    .brushOn(false)
+    .symbolSize(8)
+    .clipPadding(10)
+    .yAxisLabel("Quantidade de Bugs")
+    .xAxisLabel("Quantidade de Casos de Teste")   
+    .dimension(scatterDim)
+    .group(bugsClientScatter)
 
 //<-- Gráficos Releases -->
 
