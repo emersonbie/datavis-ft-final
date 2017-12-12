@@ -111,21 +111,6 @@
     </section>
 
 
-<section class="content-section bg-light" id="coordenadas">
-      <div class="container text-center">
-        <div class="row">
-          <div class="col-lg-10 mx-auto">
-            <h2>Coordenadas Paralelas</h2>
-
-            <div id="example" class="parcoords" style="width:960px;height:400px;"><script src="js/FT_Parallel_Coord.js"></script> </div>
-
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-
 <!-- A fábrica de testes -->
     <section class="content-section bg-teste" id="fabrica" style="background-color: indigo">
       <div class="container text-center">
@@ -149,17 +134,35 @@
           <div class="container text-center">
              <div class="row">
                <div class="col-lg-10 mx-auto">
-                 <h2>Visão Geral da Produtividade da Fábrica</h2>
+                 <h2>Visão Geral da Produtividade da Fábrica - Coordenadas Paralelas</h2>
 
                    <p class="lead mb-5" style="text-align:justify; text-justify: inter-word;" >
-                   As visualizações a seguir dão uma visão geral da produtividade da Fábrica de Testes do GREat. O <b>Gráfico 1</b> mostra a distribuição da equipe nos projetos e suas releases, a fim de identificar riscos na alocação de pessoal e minimizar os impactos de possíveis ausências dos colaboradores, por exemplo, por férias ou doença.
-                   O <b>Gráfico 2</b> auxilia na comparação entre clientes e projetos, a fim de identificar anomalias ou desvios de processos nas atividades da Fábrica.
+                   O <b>Gráfico 1</b> auxilia na comparação entre clientes e projetos, a fim de identificar anomalias ou desvios de processos nas atividades da Fábrica.
                   </p>
-                  <div class="container text-center">
+
+              </div>
+              <div id="example" class="parcoords" style="width:1260px;height:400px;"><script src="js/FT_Parallel_Coord.js"></script> </div> 
+             </div>
+           </div>
+       </section>
+    <!-- Fim da seção de explicação das visualizações -->
+
+
+<!-- Visão Geral da Produtividade da Fábrica para o Cliente 1 -->
+      <section class="content-section bg-light" id="visualizacao">
+          <div class="container text-center">
+             <div class="row">
+               <div class="col-lg-10 mx-auto">
+                 <h2>Visão Geral da Produtividade da Fábrica - Gráfico de nós</h2>
+
+                   <p class="lead mb-5" style="text-align:justify; text-justify: inter-word;" >
+                   O <b>Gráfico 2</b> mostra a distribuição da equipe nos projetos e suas releases, a fim de identificar riscos na alocação de pessoal e minimizar os impactos de possíveis ausências dos colaboradores, por exemplo, por férias ou doença.
+                   
+                  </p>
+
                   <!-- Scripts do node -->
                   <script src="js/d3.v3.min.js"></script>
-                  <script src="js/FT_Node_Link.js"></script>
-                  </div> 
+                  <script src="js/FT_Node_Link.js"></script> 
 
               </div>
              </div>
@@ -168,12 +171,13 @@
     <!-- Fim da seção de explicação das visualizações -->
 
 
+
 <!-- Portfolio -->
     <section class="content-section" id="clientes">
       <div class="container">
         <div class="content-section-heading text-center">
           <h3 class="text-secondary mb-0">Portfolio</h3>
-          <h2 class="mb-5">Recent Projects</h2>
+          <h2 class="mb-5">Clientes Recentes</h2>
         </div>
         <div class="row no-gutters">
           <div class="col-lg-6">
