@@ -164,7 +164,7 @@ d3.json("Data_Analysis_Client2.json", function(error, data) {
 //<-- Gráficos Projetos -->
   //Gráfico de barras com Bugs por projeto
   barChartTC_Projeto_Client2
-  .width(900).height(300)
+  .width(600).height(300)
   .margins({top: 10, right: 10, bottom: 50, left: 50})
   .dimension(projectDim)
   .x(d3.scale.ordinal())
@@ -183,7 +183,7 @@ d3.json("Data_Analysis_Client2.json", function(error, data) {
 
   //Gráfico de barras com Bugs por projeto
   barChartBugs_Projeto_Client2
-    .width(900).height(300)
+    .width(600).height(300)
     .margins({top: 10, right: 10, bottom: 50, left: 50})
     .dimension(projectDim)
     .x(d3.scale.ordinal())
@@ -200,7 +200,7 @@ d3.json("Data_Analysis_Client2.json", function(error, data) {
 
   //Gráfico de barras com DRE (Qnt de bugs encontrados pelo time de testes/ bugs total)
   dreProjectChart_Client2
-    .width(900).height(300)
+    .width(600).height(300)
     .margins({top: 10, right: 10, bottom: 50, left: 50})
     .dimension(projectDim)
     .x(d3.scale.ordinal())
@@ -216,7 +216,7 @@ d3.json("Data_Analysis_Client2.json", function(error, data) {
 
     //Scatter
     scatterChart_Client2
-    .width(900).height(300)
+    .width(600).height(300)
     .margins({top: 10, right: 10, bottom: 50, left: 50})
     .dimension(releaseDim)
     .x(d3.scale.linear().domain([0,800]))
@@ -232,7 +232,7 @@ d3.json("Data_Analysis_Client2.json", function(error, data) {
 
   //Gráfico de barras com Casos de teste por Release
   barChartTC_Release_Client2
-    .width(900).height(300)
+    .width(600).height(300)
     .margins({top: 10, right: 10, bottom: 50, left: 50})
     .dimension(releaseDim)
     .x(d3.scale.ordinal())
@@ -245,7 +245,7 @@ d3.json("Data_Analysis_Client2.json", function(error, data) {
 
   //Gráfico de barras com Casos de teste por Release
   barChartBugs_Release_Client2
-    .width(900).height(300)
+    .width(600).height(300)
     .margins({top: 10, right: 10, bottom: 50, left: 50})
     .dimension(releaseDim)
     .x(d3.scale.ordinal())
@@ -258,7 +258,7 @@ d3.json("Data_Analysis_Client2.json", function(error, data) {
 
   //Gráfico de barras com DRE (Qnt de bugs encontrados pelo time de testes/ bugs total)
   dreReleaseChart_Client2
-    .width(900).height(300)
+    .width(600).height(300)
     .margins({top: 10, right: 10, bottom: 50, left: 50})
     .dimension(releaseDim)
     .x(d3.scale.ordinal())
@@ -270,8 +270,8 @@ d3.json("Data_Analysis_Client2.json", function(error, data) {
 
   // Composite chart com a horas estimadas X reais
   compositeHorasReleaseChart_Client2
-    .width(900)
-    .height(400)
+    .width(600)
+    .height(300)
     .margins({top: 50, right: 50, bottom: 25, left: 40})
     .dimension(dateDim)
     .x(d3.time.scale().domain([new Date(2017, 1, 01), new Date(2017, 12, 31)]))
@@ -330,7 +330,7 @@ d3.json("Data_Analysis_Client2.json", function(error, data) {
     console.log("teste:" + releaseByProject.get(filter));
 
     barChartTC_Release_Client2
-      .width(900).height(300)
+      .width(600).height(300)
       .margins({top: 10, right: 10, bottom: 50, left: 50})
       .dimension(releaseDim)
       .x(d3.scale.ordinal().domain(["",releaseByProject.get(filter)]))
@@ -343,7 +343,7 @@ d3.json("Data_Analysis_Client2.json", function(error, data) {
 
       //Gráfico de barras com Casos de teste por Release
       barChartBugs_Release_Client2
-        .width(900).height(300)
+        .width(600).height(300)
         .margins({top: 10, right: 10, bottom: 50, left: 50})
         .dimension(releaseDim)
         .x(d3.scale.ordinal())
@@ -356,7 +356,7 @@ d3.json("Data_Analysis_Client2.json", function(error, data) {
 
       //Gráfico de barras com DRE (Qnt de bugs encontrados pelo time de testes/ bugs total)
       dreReleaseChart_Client2
-        .width(900).height(300)
+        .width(600).height(300)
         .margins({top: 10, right: 10, bottom: 50, left: 50})
         .dimension(releaseDim)
         .x(d3.scale.ordinal())
@@ -369,53 +369,6 @@ d3.json("Data_Analysis_Client2.json", function(error, data) {
 
         dc.renderAll();
   }
-
-
-
-         // Composite chart com a linha de TC x Bugs por release de todos os projetos
-/*        tcBugReleaseChart
-            .width(1200)
-            .height(400)
-            .margins({top: 50, right: 50, bottom: 25, left: 40})
-            .dimension(dateDim)
-            .x(d3.time.scale().domain([new Date(2017, 1, 01), new Date(2017, 12, 31)]))
-            .xUnits(d3.time.days)
-            .renderHorizontalGridLines(true)
-            .legend(dc.legend().x(1000).y(5).itemHeight(13).gap(5))
-            .brushOn(false)
-            .compose([
-               dc.lineChart(tcBugReleaseChart)
-                         .group(bugsByDateReleaseGroup, 'Bugs')
-                         .ordinalColors(['steelblue']),
-               dc.lineChart(tcBugReleaseChart)
-                         .group(tcByDateReleaseGroup, 'Casos de Teste')
-                         .ordinalColors(['darkorange'])]);
-*/
-
-    //Gráfico de Horas estimadas por release
-/*            horasEstimadasReleaseChart
-      .width(1200).height(400)
-      .margins({top: 10, right: 10, bottom: 50, left: 50})
-      .dimension(releaseDim)
-      .x(d3.scale.ordinal())
-      .xUnits(dc.units.ordinal)
-      .barPadding(0.2)
-      .group(horasEstimadaReleaseGroup)
-      .yAxisLabel("Horas")
-      .xAxisLabel("Release")
-
-    //Gráfico de Horas estimadas por release
-    horasReaisReleaseChart
-      .width(1200).height(400)
-      .margins({top: 10, right: 10, bottom: 50, left: 50})
-      .dimension(releaseDim)
-      .x(d3.scale.ordinal())
-      .xUnits(dc.units.ordinal)
-      .barPadding(0.2)
-      .group(horasReaisReleaseGroup)
-      .yAxisLabel("Horas")
-      .xAxisLabel("Release")
-*/
 
   dc.renderAll();
 
