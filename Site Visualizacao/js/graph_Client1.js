@@ -235,7 +235,7 @@
 
         //Gráfico de barras com Casos de teste por Release
         barChartTC_Release
-          .width(2000).height(400)
+          .width(900).height(300)
           .margins({top: 10, right: 10, bottom: 50, left: 50})
           .dimension(releaseDim)
           .x(d3.scale.ordinal())
@@ -248,7 +248,7 @@
 
         //Gráfico de barras com Casos de teste por Release
         barChartBugs_Release
-          .width(2000).height(400)
+          .width(900).height(300)
           .margins({top: 10, right: 10, bottom: 50, left: 50})
           .dimension(releaseDim)
           .x(d3.scale.ordinal())
@@ -261,7 +261,7 @@
 
         //Gráfico de barras com DRE (Qnt de bugs encontrados pelo time de testes/ bugs total)
         dreReleaseChart
-          .width(2000).height(400)
+          .width(900).height(300)
           .margins({top: 10, right: 10, bottom: 50, left: 50})
           .dimension(releaseDim)
           .x(d3.scale.ordinal())
@@ -273,7 +273,7 @@
 
         // Composite chart com a horas estimadas X reais
         compositeHorasReleaseChart
-          .width(1200)
+          .width(900)
           .height(400)
           .margins({top: 50, right: 50, bottom: 25, left: 40})
           .dimension(dateDim)

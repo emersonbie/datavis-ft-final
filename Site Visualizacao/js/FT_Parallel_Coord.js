@@ -3,7 +3,7 @@ var blue_to_brown = d3.scale.linear()
   .range(["#4169E1", "red"])
   .interpolate(d3.interpolateLab);
 
-var color = function(d) { return blue_to_brown(d['Qnt_Bugs']); };
+var color = function(d) { return blue_to_brown(d["Quantidade de Bugs"]); };
 
 var parcoords = d3.parcoords()("#example")
     .color(color)

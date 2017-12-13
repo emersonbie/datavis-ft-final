@@ -214,7 +214,7 @@ d3.json("Data_Analysis_Client2.json", function(error, data) {
          updateRelease(chart,filter);
     });
 
-            //Scatter
+    //Scatter
     scatterChart_Client2
     .width(900).height(300)
     .margins({top: 10, right: 10, bottom: 50, left: 50})
@@ -232,7 +232,7 @@ d3.json("Data_Analysis_Client2.json", function(error, data) {
 
   //Gráfico de barras com Casos de teste por Release
   barChartTC_Release_Client2
-    .width(2000).height(400)
+    .width(900).height(300)
     .margins({top: 10, right: 10, bottom: 50, left: 50})
     .dimension(releaseDim)
     .x(d3.scale.ordinal())
@@ -245,7 +245,7 @@ d3.json("Data_Analysis_Client2.json", function(error, data) {
 
   //Gráfico de barras com Casos de teste por Release
   barChartBugs_Release_Client2
-    .width(2000).height(400)
+    .width(900).height(300)
     .margins({top: 10, right: 10, bottom: 50, left: 50})
     .dimension(releaseDim)
     .x(d3.scale.ordinal())
@@ -258,7 +258,7 @@ d3.json("Data_Analysis_Client2.json", function(error, data) {
 
   //Gráfico de barras com DRE (Qnt de bugs encontrados pelo time de testes/ bugs total)
   dreReleaseChart_Client2
-    .width(2000).height(400)
+    .width(900).height(300)
     .margins({top: 10, right: 10, bottom: 50, left: 50})
     .dimension(releaseDim)
     .x(d3.scale.ordinal())
@@ -270,7 +270,7 @@ d3.json("Data_Analysis_Client2.json", function(error, data) {
 
   // Composite chart com a horas estimadas X reais
   compositeHorasReleaseChart_Client2
-    .width(1200)
+    .width(900)
     .height(400)
     .margins({top: 50, right: 50, bottom: 25, left: 40})
     .dimension(dateDim)
@@ -330,7 +330,7 @@ d3.json("Data_Analysis_Client2.json", function(error, data) {
     console.log("teste:" + releaseByProject.get(filter));
 
     barChartTC_Release_Client2
-      .width(700).height(300)
+      .width(900).height(300)
       .margins({top: 10, right: 10, bottom: 50, left: 50})
       .dimension(releaseDim)
       .x(d3.scale.ordinal().domain(["",releaseByProject.get(filter)]))
@@ -343,7 +343,7 @@ d3.json("Data_Analysis_Client2.json", function(error, data) {
 
       //Gráfico de barras com Casos de teste por Release
       barChartBugs_Release_Client2
-        .width(700).height(300)
+        .width(900).height(300)
         .margins({top: 10, right: 10, bottom: 50, left: 50})
         .dimension(releaseDim)
         .x(d3.scale.ordinal())
@@ -356,7 +356,7 @@ d3.json("Data_Analysis_Client2.json", function(error, data) {
 
       //Gráfico de barras com DRE (Qnt de bugs encontrados pelo time de testes/ bugs total)
       dreReleaseChart_Client2
-        .width(700).height(300)
+        .width(900).height(300)
         .margins({top: 10, right: 10, bottom: 50, left: 50})
         .dimension(releaseDim)
         .x(d3.scale.ordinal())

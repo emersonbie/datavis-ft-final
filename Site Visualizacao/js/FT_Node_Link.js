@@ -1,4 +1,4 @@
-var width = 960,
+var width = 1280,
     height = 600,
     root;
 
