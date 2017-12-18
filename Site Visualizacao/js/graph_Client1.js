@@ -273,14 +273,14 @@
 
         // Composite chart com a horas estimadas X reais
         compositeHorasReleaseChart
-          .width(600)
+          .width(700)
           .height(300)
           .margins({top: 50, right: 50, bottom: 25, left: 40})
           .dimension(dateDim)
           .x(d3.time.scale().domain([new Date(2017, 1, 01), new Date(2017, 12, 31)]))
           .xUnits(d3.time.days)
           .renderHorizontalGridLines(true)
-          .legend(dc.legend().x(1000).y(5).itemHeight(13).gap(5))
+          .legend(dc.legend().x(550).y(1).itemHeight(13).gap(5))
           .brushOn(false)
           .compose([
           dc.lineChart(compositeHorasReleaseChart)
